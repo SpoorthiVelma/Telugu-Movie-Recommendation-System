@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telugu Movie Recommendation System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO HEADER -->
+  <header id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">✦ Discover Telugu & Pan-India Cinema ✦</p>
+      <h1>TELUGU MOVIES</h1>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search or enter a movie title..." autocomplete="off">
+        <button id="searchBtn">Search</button>
+        <button id="recommendBtn" class="btn-outline">Recommend</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- GENRE FILTER TABS -->
+  <nav class="genre-tabs" id="genreTabs">
+    <button class="tab active" data-genre="all">All</button>
+    <button class="tab" data-genre="action">Action</button>
+    <button class="tab" data-genre="drama">Drama</button>
+    <button class="tab" data-genre="romance">Romance</button>
+    <button class="tab" data-genre="comedy">Comedy</button>
+    <button class="tab" data-genre="fantasy">Fantasy</button>
+    <button class="tab" data-genre="thriller">Thriller</button>
+    <button class="tab" data-genre="top">⭐ Top Rated</button>
+  </nav>
+
+  <!-- RECOMMENDATION RESULT BANNER -->
+  <div id="recommendBanner" class="hidden">
+    <span id="recommendText"></span>
+    <button id="clearRecommend">✕ Clear</button>
+  </div>
+
+  <!-- NO RESULTS MESSAGE -->
+  <div id="noResults" class="hidden">
+    <p>😕 No movies found. Try a different search or genre.</p>
+  </div>
+
+  <!-- MOVIE GRID -->
+  <main>
+    <div class="movies-grid" id="moviesGrid"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 Telugu Movie Recommendation System &nbsp;|&nbsp; Built with Java + HTML/CSS/JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
